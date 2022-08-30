@@ -1,262 +1,435 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Hello World in VStudio.excalidraw - My Docs</title>
-        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../../../..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">COM326 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../COM326%20README/" class="dropdown-item">COM326 README</a>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>Hello World in VStudio.excalidraw - EEE205 Artificial Intelligence I</title>
+<link href="../../../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#text-elements">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            EEE205 Artificial Intelligence I
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Hello World in VStudio.excalidraw
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="green" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    EEE205 Artificial Intelligence I
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+        Home
+      </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Hello World</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          COM326
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="COM326" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          COM326
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../COM326%20README/">
+        COM326 README
+      </a>
 </li>
-            
-<li>
-    <a href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Using Visual Studio</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Hello World
+      </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../Lectures/Lecture%201%20-%20Hello%20Magee/" class="dropdown-item">Introduction to C++</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Using Visual Studio
+      </a>
 </li>
-            
-<li>
-    <a href="../../Lectures/Lecture%202%20-/" class="dropdown-item">Lecture Title</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../C%2B%2B%20vs%20Other%20Languages/" class="dropdown-item">C++ vs Other Languages</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" id="__nav_2_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_2">
+          Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Lectures/Lecture%201%20-%20Hello%20Magee/">
+        Introduction to C++
+      </a>
 </li>
-            
-<li>
-    <a href="../Find%20Executable.excalidraw/" class="dropdown-item">Find Executable.excalidraw</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Lectures/Lecture%202%20-/">
+        Lecture Title
+      </a>
 </li>
-            
-<li>
-    <a href="./" class="dropdown-item active">Hello World in VStudio.excalidraw</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../Run%20Executable%20from%20Command%20Line.excalidraw/" class="dropdown-item">Run Executable from Command Line.excalidraw</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_3" id="__nav_2_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_3">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../C%2B%2B%20vs%20Other%20Languages/">
+        C++ vs Other Languages
+      </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../Prep/C%2B%2B%20One%20hour%20a%20day/" class="dropdown-item">C++ One hour a day</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Find%20Executable.excalidraw/">
+        Find Executable.excalidraw
+      </a>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EEE205 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../../EEE205/EEE205%20README/" class="dropdown-item">EEE205 README</a>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Hello World in VStudio.excalidraw
+      </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">a Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L1%20-%20Introduction%20to%20AI/" class="dropdown-item">L1   Introduction to AI</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Run%20Executable%20from%20Command%20Line.excalidraw/">
+        Run Executable from Command Line.excalidraw
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L2%20-%20Applications%20of%20AI/" class="dropdown-item">L2   Applications of AI</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L3%20-%20AI%20Research/" class="dropdown-item">AI Research</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">b Seminars</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/b_Seminars/S1%20Python%20Basics/" class="dropdown-item">Seminar 1 - Python Basics</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Prep/C%2B%2B%20One%20hour%20a%20day/">
+        C++ One hour a day
+      </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">c Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/c_Labs/" class="dropdown-item">Index</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/c_Labs/P1%20Beginning%20Python/" class="dropdown-item">P1 Beginning Python</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">d Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/AI%20Glossary/" class="dropdown-item">AI Glossary</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          EEE205
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="EEE205" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          EEE205
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/EEE205%20README/">
+        EEE205 README
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/AI%20Timeline/" class="dropdown-item">AI Timeline</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_1" id="__nav_3_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_1">
+          a Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="a Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_1">
+<span class="md-nav__icon md-icon"></span>
+          a Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L1%20-%20Introduction%20to%20AI/">
+        L1   Introduction to AI
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/Further%20Information/" class="dropdown-item">Sources 19-08-2022</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L2%20-%20Applications%20of%20AI/">
+        L2   Applications of AI
+      </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Prep/EEE205%20Planning%20-%202022-2023/" class="dropdown-item">EEE205 Planning   2022 2023</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L3%20-%20AI%20Research/">
+        AI Research
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Prep/S1%20Notes/" class="dropdown-item">S1 Notes</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../Find%20Executable.excalidraw/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../Run%20Executable%20from%20Command%20Line.excalidraw/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#text-elements" class="nav-link">Text Elements</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#embedded-files" class="nav-link">Embedded files</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#drawing" class="nav-link">Drawing</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
-
-<p>==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==</p>
-<h1 id="text-elements">Text Elements</h1>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" id="__nav_3_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2">
+          b Seminars
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="b Seminars" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+          b Seminars
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/b_Seminars/S1%20Python%20Basics/">
+        Seminar 1 - Python Basics
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3">
+          c Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="c Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+          c Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/c_Labs/P1%20Beginning%20Python/">
+        P1 Beginning Python
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_4" id="__nav_3_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4">
+          d Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="d Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+          d Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/AI%20Glossary/">
+        AI Glossary
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/AI%20Timeline/">
+        AI Timeline
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/Further%20Information/">
+        Sources 19-08-2022
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Prep/EEE205%20Planning%20-%202022-2023/">
+        EEE205 Planning   2022 2023
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Prep/S1%20Notes/">
+        S1 Notes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<p><mark>⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠</mark></p>
+<h1 id="text-elements">Text Elements<a class="headerlink" href="#text-elements" title="Permanent link">¶</a></h1>
 <p>Open VS 2019 ^aQaDDNhK</p>
 <p>Click create a new project ^UaaJf2jP</p>
 <p>Filter selection to a 
@@ -273,306 +446,306 @@ the option to double click and open main(). ^nLRlsVjs</p>
 with the Hello World code snippet ^VxK6YtOt</p>
 <p>The program can be run and 
 debugged by clicking the green arrow ^Mgn3oXvk</p>
-<h1 id="embedded-files">Embedded files</h1>
-<p>91169eaf0a646fb035e5545d924929ceda73720f: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175954.png]]
-6ca0cfddd3b2d127c751fc167f457530091fed01: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175709.png]]
-3ef956cbaa18ea2ec69abd3ced9556247e29a72a: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175445.png]]
-1746f0016c0bea89005a3dd4ac62ca27db3d43f1: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829174622.png]]
-463c356e4300532f3f6e6bcb083c84637414fa3d: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173910.png]]
-41265119fec4c83a323f8b7153967523f080c251: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173805.png]]
-f01341042c07fc51fb5b7395de2250f05a7bfe0c: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173731.png]]
-be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173619.png]]</p>
+<h1 id="embedded-files">Embedded files<a class="headerlink" href="#embedded-files" title="Permanent link">¶</a></h1>
+<p>91169eaf0a646fb035e5545d924929ceda73720f: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175954.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175954.png</a>
+6ca0cfddd3b2d127c751fc167f457530091fed01: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175709.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175709.png</a>
+3ef956cbaa18ea2ec69abd3ced9556247e29a72a: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175445.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829175445.png</a>
+1746f0016c0bea89005a3dd4ac62ca27db3d43f1: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829174622.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829174622.png</a>
+463c356e4300532f3f6e6bcb083c84637414fa3d: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173910.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173910.png</a>
+41265119fec4c83a323f8b7153967523f080c251: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173805.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173805.png</a>
+f01341042c07fc51fb5b7395de2250f05a7bfe0c: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173731.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173731.png</a>
+be6f08b2e8313fee59206634ba2cf91b52f6d687: <a href="../../../1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173619.png">1_Teaching/COM326/Classes/Labs/attachments/Pasted image 20220829173619.png</a></p>
 <p>%%</p>
-<h1 id="drawing">Drawing</h1>
+<h1 id="drawing">Drawing<a class="headerlink" href="#drawing" title="Permanent link">¶</a></h1>
 <pre><code class="language-json">{
-    &quot;type&quot;: &quot;excalidraw&quot;,
-    &quot;version&quot;: 2,
-    &quot;source&quot;: &quot;https://excalidraw.com&quot;,
-    &quot;elements&quot;: [
+    "type": "excalidraw",
+    "version": 2,
+    "source": "https://excalidraw.com",
+    "elements": [
         {
-            &quot;id&quot;: &quot;7W4G7QR7&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: 370.68208818142966,
-            &quot;y&quot;: -259.84286450049547,
-            &quot;width&quot;: 405.456071892482,
-            &quot;height&quot;: 102.29396309213996,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 99520,
-            &quot;version&quot;: 1250,
-            &quot;versionNonce&quot;: 572432515,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;91169eaf0a646fb035e5545d924929ceda73720f&quot;,
-            &quot;scale&quot;: [
+            "id": "7W4G7QR7",
+            "type": "image",
+            "x": 370.68208818142966,
+            "y": -259.84286450049547,
+            "width": 405.456071892482,
+            "height": 102.29396309213996,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 99520,
+            "version": 1250,
+            "versionNonce": 572432515,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "91169eaf0a646fb035e5545d924929ceda73720f",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;F01V9C0C&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: 399.09679050789936,
-            &quot;y&quot;: -536.1244086375681,
-            &quot;width&quot;: 348.9559794398921,
-            &quot;height&quot;: 156.76640113066424,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 61445,
-            &quot;version&quot;: 1205,
-            &quot;versionNonce&quot;: 217832749,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;6ca0cfddd3b2d127c751fc167f457530091fed01&quot;,
-            &quot;scale&quot;: [
+            "id": "F01V9C0C",
+            "type": "image",
+            "x": 399.09679050789936,
+            "y": -536.1244086375681,
+            "width": 348.9559794398921,
+            "height": 156.76640113066424,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 61445,
+            "version": 1205,
+            "versionNonce": 217832749,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "6ca0cfddd3b2d127c751fc167f457530091fed01",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;oF4AuXQ5&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: 71.62061805417022,
-            &quot;y&quot;: -524.3339276849053,
-            &quot;width&quot;: 192.5,
-            &quot;height&quot;: 109.92763157894736,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 88206,
-            &quot;version&quot;: 1140,
-            &quot;versionNonce&quot;: 924686371,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [
+            "id": "oF4AuXQ5",
+            "type": "image",
+            "x": 71.62061805417022,
+            "y": -524.3339276849053,
+            "width": 192.5,
+            "height": 109.92763157894736,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 88206,
+            "version": 1140,
+            "versionNonce": 924686371,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [
                 {
-                    &quot;id&quot;: &quot;XrSILbBoiObMqJYn5Iy0G&quot;,
-                    &quot;type&quot;: &quot;arrow&quot;
+                    "id": "XrSILbBoiObMqJYn5Iy0G",
+                    "type": "arrow"
                 }
             ],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;3ef956cbaa18ea2ec69abd3ced9556247e29a72a&quot;,
-            &quot;scale&quot;: [
+            "link": null,
+            "locked": false,
+            "fileId": "3ef956cbaa18ea2ec69abd3ced9556247e29a72a",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;VIzo7bXP&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: 48.34638541575532,
-            &quot;y&quot;: -373.46844077816684,
-            &quot;width&quot;: 257.9166870117188,
-            &quot;height&quot;: 132.55161004317435,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 40574,
-            &quot;version&quot;: 728,
-            &quot;versionNonce&quot;: 88190861,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;1746f0016c0bea89005a3dd4ac62ca27db3d43f1&quot;,
-            &quot;scale&quot;: [
+            "id": "VIzo7bXP",
+            "type": "image",
+            "x": 48.34638541575532,
+            "y": -373.46844077816684,
+            "width": 257.9166870117188,
+            "height": 132.55161004317435,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 40574,
+            "version": 728,
+            "versionNonce": 88190861,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "1746f0016c0bea89005a3dd4ac62ca27db3d43f1",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;gMHl8tMQ&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: -407.1134338378906,
-            &quot;y&quot;: -341.0029524693723,
-            &quot;width&quot;: 277.91668701171875,
-            &quot;height&quot;: 56.494539654841184,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 16541,
-            &quot;version&quot;: 518,
-            &quot;versionNonce&quot;: 748460995,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;463c356e4300532f3f6e6bcb083c84637414fa3d&quot;,
-            &quot;scale&quot;: [
+            "id": "gMHl8tMQ",
+            "type": "image",
+            "x": -407.1134338378906,
+            "y": -341.0029524693723,
+            "width": 277.91668701171875,
+            "height": 56.494539654841184,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 16541,
+            "version": 518,
+            "versionNonce": 748460995,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "463c356e4300532f3f6e6bcb083c84637414fa3d",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;ZJ0oObbF&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: -229.36325073242188,
-            &quot;y&quot;: -570.3637630715555,
-            &quot;width&quot;: 134.91656494140625,
-            &quot;height&quot;: 27.952326990622847,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 71139,
-            &quot;version&quot;: 346,
-            &quot;versionNonce&quot;: 1843279341,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [
+            "id": "ZJ0oObbF",
+            "type": "image",
+            "x": -229.36325073242188,
+            "y": -570.3637630715555,
+            "width": 134.91656494140625,
+            "height": 27.952326990622847,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 71139,
+            "version": 346,
+            "versionNonce": 1843279341,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [
                 {
-                    &quot;id&quot;: &quot;qCArOxz727wOlWZLDDPDx&quot;,
-                    &quot;type&quot;: &quot;arrow&quot;
+                    "id": "qCArOxz727wOlWZLDDPDx",
+                    "type": "arrow"
                 }
             ],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;41265119fec4c83a323f8b7153967523f080c251&quot;,
-            &quot;scale&quot;: [
+            "link": null,
+            "locked": false,
+            "fileId": "41265119fec4c83a323f8b7153967523f080c251",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;O54ybJ6O&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: -293.1366467114479,
-            &quot;y&quot;: -208.0828282379838,
-            &quot;width&quot;: 307.91656494140625,
-            &quot;height&quot;: 58.99577882910977,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 14681,
-            &quot;version&quot;: 1039,
-            &quot;versionNonce&quot;: 247081827,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;f01341042c07fc51fb5b7395de2250f05a7bfe0c&quot;,
-            &quot;scale&quot;: [
+            "id": "O54ybJ6O",
+            "type": "image",
+            "x": -293.1366467114479,
+            "y": -208.0828282379838,
+            "width": 307.91656494140625,
+            "height": 58.99577882910977,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 14681,
+            "version": 1039,
+            "versionNonce": 247081827,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "f01341042c07fc51fb5b7395de2250f05a7bfe0c",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;XiaGXQBX&quot;,
-            &quot;type&quot;: &quot;image&quot;,
-            &quot;x&quot;: -271.6132507324219,
-            &quot;y&quot;: -491.8641592933532,
-            &quot;width&quot;: 214.41656494140625,
-            &quot;height&quot;: 83.70272321242062,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 85364,
-            &quot;version&quot;: 424,
-            &quot;versionNonce&quot;: 1910173773,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: false,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;fileId&quot;: &quot;be6f08b2e8313fee59206634ba2cf91b52f6d687&quot;,
-            &quot;scale&quot;: [
+            "id": "XiaGXQBX",
+            "type": "image",
+            "x": -271.6132507324219,
+            "y": -491.8641592933532,
+            "width": 214.41656494140625,
+            "height": 83.70272321242062,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 85364,
+            "version": 424,
+            "versionNonce": 1910173773,
+            "updated": 1661805005763,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "fileId": "be6f08b2e8313fee59206634ba2cf91b52f6d687",
+            "scale": [
                 1,
                 1
             ]
         },
         {
-            &quot;id&quot;: &quot;qCArOxz727wOlWZLDDPDx&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: -134.56316080605126,
-            &quot;y&quot;: -548.512776114816,
-            &quot;width&quot;: 16.489040447179406,
-            &quot;height&quot;: 67.88219963799747,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 341342765,
-            &quot;version&quot;: 1240,
-            &quot;versionNonce&quot;: 1640285955,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005763,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "qCArOxz727wOlWZLDDPDx",
+            "type": "arrow",
+            "x": -134.56316080605126,
+            "y": -548.512776114816,
+            "width": 16.489040447179406,
+            "height": 67.88219963799747,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 341342765,
+            "version": 1240,
+            "versionNonce": 1640285955,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005763,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -582,38 +755,38 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     67.88219963799747
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;ISbF7ISe7eyN2LU8YwuY_&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: -233.6562023334211,
-            &quot;y&quot;: -420.11459841512385,
-            &quot;width&quot;: 115.92448597682335,
-            &quot;height&quot;: 105.21705278509455,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1658272131,
-            &quot;version&quot;: 834,
-            &quot;versionNonce&quot;: 521232045,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005763,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "ISbF7ISe7eyN2LU8YwuY_",
+            "type": "arrow",
+            "x": -233.6562023334211,
+            "y": -420.11459841512385,
+            "width": 115.92448597682335,
+            "height": 105.21705278509455,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1658272131,
+            "version": 834,
+            "versionNonce": 521232045,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005763,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -623,38 +796,38 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     105.21705278509455
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;qpLwwU6vDWUDb7ETlFfXc&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: -173.4215100823855,
-            &quot;y&quot;: -296.82891796446756,
-            &quot;width&quot;: 64.45785848057938,
-            &quot;height&quot;: 106.17295838578895,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 2022844867,
-            &quot;version&quot;: 919,
-            &quot;versionNonce&quot;: 473624227,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "qpLwwU6vDWUDb7ETlFfXc",
+            "type": "arrow",
+            "x": -173.4215100823855,
+            "y": -296.82891796446756,
+            "width": 64.45785848057938,
+            "height": 106.17295838578895,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 2022844867,
+            "version": 919,
+            "versionNonce": 473624227,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -664,38 +837,38 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     106.17295838578895
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;tN5Pe_9df65WOZGt0jB75&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: -48.493499755859375,
-            &quot;y&quot;: -183.58326530456543,
-            &quot;width&quot;: 102.54327939863663,
-            &quot;height&quot;: 104.21791743128426,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 2025317325,
-            &quot;version&quot;: 428,
-            &quot;versionNonce&quot;: 204144909,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "tN5Pe_9df65WOZGt0jB75",
+            "type": "arrow",
+            "x": -48.493499755859375,
+            "y": -183.58326530456543,
+            "width": 102.54327939863663,
+            "height": 104.21791743128426,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 2025317325,
+            "version": 428,
+            "versionNonce": 204144909,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -705,38 +878,38 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     -104.21791743128426
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;XrSILbBoiObMqJYn5Iy0G&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: 103.4489110392849,
-            &quot;y&quot;: -348.1780965228311,
-            &quot;width&quot;: 0.02900684234194273,
-            &quot;height&quot;: 57.24589062091019,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1940662701,
-            &quot;version&quot;: 396,
-            &quot;versionNonce&quot;: 1623925315,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "XrSILbBoiObMqJYn5Iy0G",
+            "type": "arrow",
+            "x": 103.4489110392849,
+            "y": -348.1780965228311,
+            "width": 0.02900684234194273,
+            "height": 57.24589062091019,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1940662701,
+            "version": 396,
+            "versionNonce": 1623925315,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -746,42 +919,42 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     -57.24589062091019
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: {
-                &quot;elementId&quot;: &quot;oF4AuXQ5&quot;,
-                &quot;focus&quot;: 0.6697606501755824,
-                &quot;gap&quot;: 8.982308962216763
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": {
+                "elementId": "oF4AuXQ5",
+                "focus": 0.6697606501755824,
+                "gap": 8.982308962216763
             },
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;RIhWCua43bhRtOhI2bCyj&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: 259.5793503822397,
-            &quot;y&quot;: -500.90215976481034,
-            &quot;width&quot;: 157.72878035404972,
-            &quot;height&quot;: 47.24770966025142,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 522270125,
-            &quot;version&quot;: 609,
-            &quot;versionNonce&quot;: 1050761069,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "RIhWCua43bhRtOhI2bCyj",
+            "type": "arrow",
+            "x": 259.5793503822397,
+            "y": -500.90215976481034,
+            "width": 157.72878035404972,
+            "height": 47.24770966025142,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 522270125,
+            "version": 609,
+            "versionNonce": 1050761069,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -791,38 +964,38 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     47.24770966025142
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;x7dtq0yCgbIhQJyzJLO6m&quot;,
-            &quot;type&quot;: &quot;arrow&quot;,
-            &quot;x&quot;: 589.7725561691608,
-            &quot;y&quot;: -403.7156428941262,
-            &quot;width&quot;: 111.22930243732623,
-            &quot;height&quot;: 151.62593229620325,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#000000&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 202791917,
-            &quot;version&quot;: 654,
-            &quot;versionNonce&quot;: 2018763235,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "x7dtq0yCgbIhQJyzJLO6m",
+            "type": "arrow",
+            "x": 589.7725561691608,
+            "y": -403.7156428941262,
+            "width": 111.22930243732623,
+            "height": 151.62593229620325,
+            "angle": 0,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 202791917,
+            "version": 654,
+            "versionNonce": 2018763235,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -832,318 +1005,318 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     151.62593229620325
                 ]
             ],
-            &quot;lastCommittedPoint&quot;: null,
-            &quot;startBinding&quot;: null,
-            &quot;endBinding&quot;: null,
-            &quot;startArrowhead&quot;: null,
-            &quot;endArrowhead&quot;: &quot;arrow&quot;
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow"
         },
         {
-            &quot;id&quot;: &quot;aQaDDNhK&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -240.89978369303287,
-            &quot;y&quot;: -532.2834283063092,
-            &quot;width&quot;: 165.9000672725951,
-            &quot;height&quot;: 30.4897420933418,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 976400579,
-            &quot;version&quot;: 1355,
-            &quot;versionNonce&quot;: 1354621389,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: [],
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;Open VS 2019&quot;,
-            &quot;rawText&quot;: &quot;Open VS 2019&quot;,
-            &quot;fontSize&quot;: 24.805155832942226,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;left&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 21.4897420933418,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Open VS 2019&quot;
+            "id": "aQaDDNhK",
+            "type": "text",
+            "x": -240.89978369303287,
+            "y": -532.2834283063092,
+            "width": 165.9000672725951,
+            "height": 30.4897420933418,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 976400579,
+            "version": 1355,
+            "versionNonce": 1354621389,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "Open VS 2019",
+            "rawText": "Open VS 2019",
+            "fontSize": 24.805155832942226,
+            "fontFamily": 1,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "baseline": 21.4897420933418,
+            "containerId": null,
+            "originalText": "Open VS 2019"
         },
         {
-            &quot;id&quot;: &quot;UaaJf2jP&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -472.44888137592284,
-            &quot;y&quot;: -390.2585973395355,
-            &quot;width&quot;: 396,
-            &quot;height&quot;: 38,
-            &quot;angle&quot;: 6.269720806792705,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 729038851,
-            &quot;version&quot;: 770,
-            &quot;versionNonce&quot;: 199470467,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: [],
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;Click create a new project&quot;,
-            &quot;rawText&quot;: &quot;Click create a new project&quot;,
-            &quot;fontSize&quot;: 30.16739592589649,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;left&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 27,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Click create a new project&quot;
+            "id": "UaaJf2jP",
+            "type": "text",
+            "x": -472.44888137592284,
+            "y": -390.2585973395355,
+            "width": 396,
+            "height": 38,
+            "angle": 6.269720806792705,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 729038851,
+            "version": 770,
+            "versionNonce": 199470467,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "Click create a new project",
+            "rawText": "Click create a new project",
+            "fontSize": 30.16739592589649,
+            "fontFamily": 1,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "baseline": 27,
+            "containerId": null,
+            "originalText": "Click create a new project"
         },
         {
-            &quot;id&quot;: &quot;vtY8Wyvm&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -460.73517757008096,
-            &quot;y&quot;: -278.8163063951808,
-            &quot;width&quot;: 296,
-            &quot;height&quot;: 63,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 647853581,
-            &quot;version&quot;: 659,
-            &quot;versionNonce&quot;: 1469718573,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: [],
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;Filter selection to a \nC++ Windows application&quot;,
-            &quot;rawText&quot;: &quot;Filter selection to a \nC++ Windows application&quot;,
-            &quot;fontSize&quot;: 25.192305560865993,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 54,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Filter selection to a \nC++ Windows application&quot;
+            "id": "vtY8Wyvm",
+            "type": "text",
+            "x": -460.73517757008096,
+            "y": -278.8163063951808,
+            "width": 296,
+            "height": 63,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 647853581,
+            "version": 659,
+            "versionNonce": 1469718573,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "Filter selection to a \nC++ Windows application",
+            "rawText": "Filter selection to a \nC++ Windows application",
+            "fontSize": 25.192305560865993,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 54,
+            "containerId": null,
+            "originalText": "Filter selection to a \nC++ Windows application"
         },
         {
-            &quot;id&quot;: &quot;QcZBPD6b&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -241.19423127932862,
-            &quot;y&quot;: -135.74604508558764,
-            &quot;width&quot;: 202.27782050578654,
-            &quot;height&quot;: 66.10386291038775,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 6756035,
-            &quot;version&quot;: 288,
-            &quot;versionNonce&quot;: 515441955,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;Then choose a \nConsole App&quot;,
-            &quot;rawText&quot;: &quot;Then choose a \nConsole App&quot;,
-            &quot;fontSize&quot;: 26.441545164155105,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 56.10386291038775,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Then choose a \nConsole App&quot;
+            "id": "QcZBPD6b",
+            "type": "text",
+            "x": -241.19423127932862,
+            "y": -135.74604508558764,
+            "width": 202.27782050578654,
+            "height": 66.10386291038775,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 6756035,
+            "version": 288,
+            "versionNonce": 515441955,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "Then choose a \nConsole App",
+            "rawText": "Then choose a \nConsole App",
+            "fontSize": 26.441545164155105,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 56.10386291038775,
+            "containerId": null,
+            "originalText": "Then choose a \nConsole App"
         },
         {
-            &quot;id&quot;: &quot;2DX9QRfu&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: 26.989359960175364,
-            &quot;y&quot;: -225.4235554507519,
-            &quot;width&quot;: 318,
-            &quot;height&quot;: 90,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 1842914467,
-            &quot;version&quot;: 326,
-            &quot;versionNonce&quot;: 153064077,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;Locate a suitable location\n and save the project \nas Hello_World&quot;,
-            &quot;rawText&quot;: &quot;Locate a suitable location\n and save the project \nas Hello_World&quot;,
-            &quot;fontSize&quot;: 23.97950423729789,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 81,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Locate a suitable location\n and save the project \nas Hello_World&quot;
+            "id": "2DX9QRfu",
+            "type": "text",
+            "x": 26.989359960175364,
+            "y": -225.4235554507519,
+            "width": 318,
+            "height": 90,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 1842914467,
+            "version": 326,
+            "versionNonce": 153064077,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "Locate a suitable location\n and save the project \nas Hello_World",
+            "rawText": "Locate a suitable location\n and save the project \nas Hello_World",
+            "fontSize": 23.97950423729789,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 81,
+            "containerId": null,
+            "originalText": "Locate a suitable location\n and save the project \nas Hello_World"
         },
         {
-            &quot;id&quot;: &quot;nLRlsVjs&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -54.445092070158466,
-            &quot;y&quot;: -616.6358107021016,
-            &quot;width&quot;: 548.6436967967765,
-            &quot;height&quot;: 81.64340726142507,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 67232653,
-            &quot;version&quot;: 203,
-            &quot;versionNonce&quot;: 1212311747,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main().&quot;,
-            &quot;rawText&quot;: &quot;You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main().&quot;,
-            &quot;fontSize&quot;: 21.771575269713345,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 72.64340726142507,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main().&quot;
+            "id": "nLRlsVjs",
+            "type": "text",
+            "x": -54.445092070158466,
+            "y": -616.6358107021016,
+            "width": 548.6436967967765,
+            "height": 81.64340726142507,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 67232653,
+            "version": 203,
+            "versionNonce": 1212311747,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main().",
+            "rawText": "You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main().",
+            "fontSize": 21.771575269713345,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 72.64340726142507,
+            "containerId": null,
+            "originalText": "You should see your project in a Class View tab. \nClicking on Functions and Variables should give you \nthe option to double click and open main()."
         },
         {
-            &quot;id&quot;: &quot;VxK6YtOt&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: 351.0780207727323,
-            &quot;y&quot;: -368.669171886331,
-            &quot;width&quot;: 420.6101944636313,
-            &quot;height&quot;: 64.1174076926267,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 975467405,
-            &quot;version&quot;: 974,
-            &quot;versionNonce&quot;: 773740643,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;You should then open a CPP file \nwith the Hello World code snippet&quot;,
-            &quot;rawText&quot;: &quot;You should then open a CPP file \nwith the Hello World code snippet&quot;,
-            &quot;fontSize&quot;: 25.646963077050685,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 54.1174076926267,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;You should then open a CPP file \nwith the Hello World code snippet&quot;
+            "id": "VxK6YtOt",
+            "type": "text",
+            "x": 351.0780207727323,
+            "y": -368.669171886331,
+            "width": 420.6101944636313,
+            "height": 64.1174076926267,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 975467405,
+            "version": 974,
+            "versionNonce": 773740643,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "You should then open a CPP file \nwith the Hello World code snippet",
+            "rawText": "You should then open a CPP file \nwith the Hello World code snippet",
+            "fontSize": 25.646963077050685,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 54.1174076926267,
+            "containerId": null,
+            "originalText": "You should then open a CPP file \nwith the Hello World code snippet"
         },
         {
-            &quot;id&quot;: &quot;Mgn3oXvk&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: 340.55715599363407,
-            &quot;y&quot;: -138.80579657004034,
-            &quot;width&quot;: 438,
-            &quot;height&quot;: 62,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 1184937517,
-            &quot;version&quot;: 265,
-            &quot;versionNonce&quot;: 198972237,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;The program can be run and \ndebugged by clicking the green arrow&quot;,
-            &quot;rawText&quot;: &quot;The program can be run and \ndebugged by clicking the green arrow&quot;,
-            &quot;fontSize&quot;: 24.65044590557881,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 53,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;The program can be run and \ndebugged by clicking the green arrow&quot;
+            "id": "Mgn3oXvk",
+            "type": "text",
+            "x": 340.55715599363407,
+            "y": -138.80579657004034,
+            "width": 438,
+            "height": 62,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 1184937517,
+            "version": 265,
+            "versionNonce": 198972237,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "The program can be run and \ndebugged by clicking the green arrow",
+            "rawText": "The program can be run and \ndebugged by clicking the green arrow",
+            "fontSize": 24.65044590557881,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 53,
+            "containerId": null,
+            "originalText": "The program can be run and \ndebugged by clicking the green arrow"
         },
         {
-            &quot;id&quot;: &quot;fwQqrnaF9pDKc3bhLgAfi&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -249.58243692701507,
-            &quot;y&quot;: -643.7079112125721,
-            &quot;width&quot;: 14.117407692626784,
-            &quot;height&quot;: 44.84327271623488,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 275910499,
-            &quot;version&quot;: 50,
-            &quot;versionNonce&quot;: 1041978371,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "fwQqrnaF9pDKc3bhLgAfi",
+            "type": "freedraw",
+            "x": -249.58243692701507,
+            "y": -643.7079112125721,
+            "width": 14.117407692626784,
+            "height": 44.84327271623488,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 275910499,
+            "version": 50,
+            "versionNonce": 1041978371,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -1333,39 +1506,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     37.369393930195656
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 14.117407692626784,
                 37.369393930195656
             ]
         },
         {
-            &quot;id&quot;: &quot;s390ptqKN_X71cPytsCAa&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -371.3904169667471,
-            &quot;y&quot;: -475.71631100683817,
-            &quot;width&quot;: 40.52471209395492,
-            &quot;height&quot;: 58.189355554726376,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 674749347,
-            &quot;version&quot;: 67,
-            &quot;versionNonce&quot;: 1599972163,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805007345,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "s390ptqKN_X71cPytsCAa",
+            "type": "freedraw",
+            "x": -371.3904169667471,
+            "y": -475.71631100683817,
+            "width": 40.52471209395492,
+            "height": 58.189355554726376,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 674749347,
+            "version": 67,
+            "versionNonce": 1599972163,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805007345,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -1631,39 +1804,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     45.7201753191689
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 35.329210815938836,
                 45.7201753191689
             ]
         },
         {
-            &quot;id&quot;: &quot;uEqlR7kVT3keL3sy7ab1r&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -496.08183879430055,
-            &quot;y&quot;: -214.90343303513953,
-            &quot;width&quot;: 38.446496361627624,
-            &quot;height&quot;: 58.189431660330456,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 154363501,
-            &quot;version&quot;: 94,
-            &quot;versionNonce&quot;: 1530797475,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805013963,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "uEqlR7kVT3keL3sy7ab1r",
+            "type": "freedraw",
+            "x": -496.08183879430055,
+            "y": -214.90343303513953,
+            "width": 38.446496361627624,
+            "height": 58.189431660330456,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 154363501,
+            "version": 94,
+            "versionNonce": 1530797475,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805013963,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -2037,39 +2210,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     49.87656873102139
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 2.078291837931431,
                 49.87656873102139
             ]
         },
         {
-            &quot;id&quot;: &quot;RpHzmjRQjJgTKCR78-_Oj&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -293.4582783245262,
-            &quot;y&quot;: -99.56386784465258,
-            &quot;width&quot;: 48.83742281205559,
-            &quot;height&quot;: 31.17285545688833,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 360071693,
-            &quot;version&quot;: 36,
-            &quot;versionNonce&quot;: 1508354787,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805016072,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "RpHzmjRQjJgTKCR78-_Oj",
+            "type": "freedraw",
+            "x": -293.4582783245262,
+            "y": -99.56386784465258,
+            "width": 48.83742281205559,
+            "height": 31.17285545688833,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 360071693,
+            "version": 36,
+            "versionNonce": 1508354787,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805016072,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -2211,39 +2384,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     29.094639724561148
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 41.56378190731641,
                 29.094639724561148
             ]
         },
         {
-            &quot;id&quot;: &quot;agEwBnm6_vA7f90W2b_TS&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -275.79363486375473,
-            &quot;y&quot;: -91.25100491534351,
-            &quot;width&quot;: 2.0781396267231003,
-            &quot;height&quot;: 48.83734670645151,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1508321485,
-            &quot;version&quot;: 26,
-            &quot;versionNonce&quot;: 418515459,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805016633,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "agEwBnm6_vA7f90W2b_TS",
+            "type": "freedraw",
+            "x": -275.79363486375473,
+            "y": -91.25100491534351,
+            "width": 2.0781396267231003,
+            "height": 48.83734670645151,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1508321485,
+            "version": 26,
+            "versionNonce": 418515459,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805016633,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -2345,39 +2518,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     40.52471209395492
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 2.0781396267231003,
                 40.52471209395492
             ]
         },
         {
-            &quot;id&quot;: &quot;FpE7szPAkFZfoLczSL8HU&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 231.28476316456,
-            &quot;y&quot;: -113.07200373516537,
-            &quot;width&quot;: 72.73671346980882,
-            &quot;height&quot;: 47.79850520990237,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 781044653,
-            &quot;version&quot;: 96,
-            &quot;versionNonce&quot;: 1695832067,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805019589,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "FpE7szPAkFZfoLczSL8HU",
+            "type": "freedraw",
+            "x": 231.28476316456,
+            "y": -113.07200373516537,
+            "width": 72.73671346980882,
+            "height": 47.79850520990237,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 781044653,
+            "version": 96,
+            "versionNonce": 1695832067,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805019589,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -2759,39 +2932,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     33.25091897800735
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 -69.61942792412015,
                 33.25091897800735
             ]
         },
         {
-            &quot;id&quot;: &quot;MO8Ri45CyyREgOd_Vqw21&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 174.13447742319522,
-            &quot;y&quot;: -684.5744425679902,
-            &quot;width&quot;: 40.52471209395503,
-            &quot;height&quot;: 46.759283185332606,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1728011693,
-            &quot;version&quot;: 104,
-            &quot;versionNonce&quot;: 1104809091,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805021937,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "MO8Ri45CyyREgOd_Vqw21",
+            "type": "freedraw",
+            "x": 174.13447742319522,
+            "y": -684.5744425679902,
+            "width": 40.52471209395503,
+            "height": 46.759283185332606,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1728011693,
+            "version": 104,
+            "versionNonce": 1104809091,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805021937,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -3205,39 +3378,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     24.938284365510754
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 -33.25099508361154,
                 24.938284365510754
             ]
         },
         {
-            &quot;id&quot;: &quot;gWU3Z-b1RbusE2XsafUkc&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 592.8903430980895,
-            &quot;y&quot;: -597.290447288703,
-            &quot;width&quot;: 65.46299645946556,
-            &quot;height&quot;: 63.38481877994025,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1778200877,
-            &quot;version&quot;: 53,
-            &quot;versionNonce&quot;: 1333924589,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805025604,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "gWU3Z-b1RbusE2XsafUkc",
+            "type": "freedraw",
+            "x": 592.8903430980895,
+            "y": -597.290447288703,
+            "width": 65.46299645946556,
+            "height": 63.38481877994025,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1778200877,
+            "version": 53,
+            "versionNonce": 1333924589,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805025604,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -3447,39 +3620,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     63.38481877994025
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 38.44626804481527,
                 63.38481877994025
             ]
         },
         {
-            &quot;id&quot;: &quot;KjK_tyinSO5TvAA4-RUF-&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 631.3366111429048,
-            &quot;y&quot;: -564.0394141522895,
-            &quot;width&quot;: 37.4074265482659,
-            &quot;height&quot;: 4.156393411852491,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1871617635,
-            &quot;version&quot;: 26,
-            &quot;versionNonce&quot;: 1726104013,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805026381,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "KjK_tyinSO5TvAA4-RUF-",
+            "type": "freedraw",
+            "x": 631.3366111429048,
+            "y": -564.0394141522895,
+            "width": 37.4074265482659,
+            "height": 4.156393411852491,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1871617635,
+            "version": 26,
+            "versionNonce": 1726104013,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805026381,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -3581,39 +3754,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     4.156393411852491
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 37.4074265482659,
                 4.156393411852491
             ]
         },
         {
-            &quot;id&quot;: &quot;3KbZlb_HIa-0GavmEqwXC&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 568.9909002291279,
-            &quot;y&quot;: -42.41365820889223,
-            &quot;width&quot;: 46.759283185332606,
-            &quot;height&quot;: 49.87656873102128,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 548752771,
-            &quot;version&quot;: 165,
-            &quot;versionNonce&quot;: 1718291139,
-            &quot;isDeleted&quot;: false,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805031802,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "3KbZlb_HIa-0GavmEqwXC",
+            "type": "freedraw",
+            "x": 568.9909002291279,
+            "y": -42.41365820889223,
+            "width": 46.759283185332606,
+            "height": 49.87656873102128,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 548752771,
+            "version": 165,
+            "versionNonce": 1718291139,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1661805031802,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -4267,109 +4440,109 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     0
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 -8.312710718100789,
                 -3.117285545688901
             ]
         },
         {
-            &quot;text&quot;: &quot;Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*&quot;,
-            &quot;fontSize&quot;: 20,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 18,
-            &quot;id&quot;: &quot;S1vjqV1Q&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -121.94045620728008,
-            &quot;y&quot;: -189.46569735563583,
-            &quot;width&quot;: 1272,
-            &quot;height&quot;: 25,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 32175,
-            &quot;version&quot;: 7,
-            &quot;versionNonce&quot;: 1456684749,
-            &quot;updated&quot;: 1661805005763,
-            &quot;isDeleted&quot;: true,
-            &quot;groupIds&quot;: [],
-            &quot;boundElements&quot;: [],
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*&quot;,
-            &quot;rawText&quot;: &quot;Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*&quot;
+            "text": "Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*",
+            "fontSize": 20,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 18,
+            "id": "S1vjqV1Q",
+            "type": "text",
+            "x": -121.94045620728008,
+            "y": -189.46569735563583,
+            "width": 1272,
+            "height": 25,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "strokeSharpness": "sharp",
+            "seed": 32175,
+            "version": 7,
+            "versionNonce": 1456684749,
+            "updated": 1661805005763,
+            "isDeleted": true,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "containerId": null,
+            "originalText": "Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*",
+            "rawText": "Locate a suitable location to save your project - ideally a USB drive or network drive, and save the project as *Hello_World*"
         },
         {
-            &quot;id&quot;: &quot;vYsrxL7U&quot;,
-            &quot;type&quot;: &quot;text&quot;,
-            &quot;x&quot;: -218.6050740812782,
-            &quot;y&quot;: -304.72596644269106,
-            &quot;width&quot;: 1477,
-            &quot;height&quot;: 25,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;sharp&quot;,
-            &quot;seed&quot;: 1012609251,
-            &quot;version&quot;: 4,
-            &quot;versionNonce&quot;: 570931437,
-            &quot;isDeleted&quot;: true,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;text&quot;: &quot;You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**.&quot;,
-            &quot;rawText&quot;: &quot;You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**.&quot;,
-            &quot;fontSize&quot;: 20,
-            &quot;fontFamily&quot;: 1,
-            &quot;textAlign&quot;: &quot;center&quot;,
-            &quot;verticalAlign&quot;: &quot;top&quot;,
-            &quot;baseline&quot;: 18,
-            &quot;containerId&quot;: null,
-            &quot;originalText&quot;: &quot;You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**.&quot;
+            "id": "vYsrxL7U",
+            "type": "text",
+            "x": -218.6050740812782,
+            "y": -304.72596644269106,
+            "width": 1477,
+            "height": 25,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "sharp",
+            "seed": 1012609251,
+            "version": 4,
+            "versionNonce": 570931437,
+            "isDeleted": true,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "text": "You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**.",
+            "rawText": "You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**.",
+            "fontSize": 20,
+            "fontFamily": 1,
+            "textAlign": "center",
+            "verticalAlign": "top",
+            "baseline": 18,
+            "containerId": null,
+            "originalText": "You should see your project in a *Class View* tab. Clicking on Functions and Variables should give you the option to double click and open **main()**."
         },
         {
-            &quot;id&quot;: &quot;PVYfBsJKO7cDcaAL6P72R&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: 28.66120269478506,
-            &quot;y&quot;: -674.1834400119578,
-            &quot;width&quot;: 17.664643460771458,
-            &quot;height&quot;: 4.156393411852491,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 2046531171,
-            &quot;version&quot;: 24,
-            &quot;versionNonce&quot;: 1086660173,
-            &quot;isDeleted&quot;: true,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805001043,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "PVYfBsJKO7cDcaAL6P72R",
+            "type": "freedraw",
+            "x": 28.66120269478506,
+            "y": -674.1834400119578,
+            "width": 17.664643460771458,
+            "height": 4.156393411852491,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 2046531171,
+            "version": 24,
+            "versionNonce": 1086660173,
+            "isDeleted": true,
+            "boundElements": null,
+            "updated": 1661805001043,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -4459,39 +4632,39 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     -4.156393411852491
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 17.664643460771458,
                 -4.156393411852491
             ]
         },
         {
-            &quot;id&quot;: &quot;aUc2JTpSv4pzL00UJcOSX&quot;,
-            &quot;type&quot;: &quot;freedraw&quot;,
-            &quot;x&quot;: -378.6640578714863,
-            &quot;y&quot;: -480.91177423205215,
-            &quot;width&quot;: 68.58028200515434,
-            &quot;height&quot;: 46.75928318533249,
-            &quot;angle&quot;: 0,
-            &quot;strokeColor&quot;: &quot;#2b8a3e&quot;,
-            &quot;backgroundColor&quot;: &quot;transparent&quot;,
-            &quot;fillStyle&quot;: &quot;hachure&quot;,
-            &quot;strokeWidth&quot;: 1,
-            &quot;strokeStyle&quot;: &quot;solid&quot;,
-            &quot;roughness&quot;: 1,
-            &quot;opacity&quot;: 100,
-            &quot;groupIds&quot;: [],
-            &quot;strokeSharpness&quot;: &quot;round&quot;,
-            &quot;seed&quot;: 1885108483,
-            &quot;version&quot;: 88,
-            &quot;versionNonce&quot;: 1123426733,
-            &quot;isDeleted&quot;: true,
-            &quot;boundElements&quot;: null,
-            &quot;updated&quot;: 1661805005764,
-            &quot;link&quot;: null,
-            &quot;locked&quot;: false,
-            &quot;points&quot;: [
+            "id": "aUc2JTpSv4pzL00UJcOSX",
+            "type": "freedraw",
+            "x": -378.6640578714863,
+            "y": -480.91177423205215,
+            "width": 68.58028200515434,
+            "height": 46.75928318533249,
+            "angle": 0,
+            "strokeColor": "#2b8a3e",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "strokeSharpness": "round",
+            "seed": 1885108483,
+            "version": 88,
+            "versionNonce": 1123426733,
+            "isDeleted": true,
+            "boundElements": null,
+            "updated": 1661805005764,
+            "link": null,
+            "locked": false,
+            "points": [
                 [
                     0,
                     0
@@ -4837,112 +5010,93 @@ be6f08b2e8313fee59206634ba2cf91b52f6d687: [[1_Teaching/COM326/Classes/Labs/attac
                     38.44649636162751
                 ]
             ],
-            &quot;pressures&quot;: [],
-            &quot;simulatePressure&quot;: true,
-            &quot;lastCommittedPoint&quot;: [
+            "pressures": [],
+            "simulatePressure": true,
+            "lastCommittedPoint": [
                 46.75928318533249,
                 38.44649636162751
             ]
         }
     ],
-    &quot;appState&quot;: {
-        &quot;theme&quot;: &quot;dark&quot;,
-        &quot;viewBackgroundColor&quot;: &quot;#ffffff&quot;,
-        &quot;currentItemStrokeColor&quot;: &quot;#2b8a3e&quot;,
-        &quot;currentItemBackgroundColor&quot;: &quot;transparent&quot;,
-        &quot;currentItemFillStyle&quot;: &quot;hachure&quot;,
-        &quot;currentItemStrokeWidth&quot;: 1,
-        &quot;currentItemStrokeStyle&quot;: &quot;solid&quot;,
-        &quot;currentItemRoughness&quot;: 1,
-        &quot;currentItemOpacity&quot;: 100,
-        &quot;currentItemFontFamily&quot;: 1,
-        &quot;currentItemFontSize&quot;: 20,
-        &quot;currentItemTextAlign&quot;: &quot;center&quot;,
-        &quot;currentItemStrokeSharpness&quot;: &quot;sharp&quot;,
-        &quot;currentItemStartArrowhead&quot;: null,
-        &quot;currentItemEndArrowhead&quot;: &quot;arrow&quot;,
-        &quot;currentItemLinearStrokeSharpness&quot;: &quot;round&quot;,
-        &quot;gridSize&quot;: null,
-        &quot;colorPalette&quot;: {}
+    "appState": {
+        "theme": "dark",
+        "viewBackgroundColor": "#ffffff",
+        "currentItemStrokeColor": "#2b8a3e",
+        "currentItemBackgroundColor": "transparent",
+        "currentItemFillStyle": "hachure",
+        "currentItemStrokeWidth": 1,
+        "currentItemStrokeStyle": "solid",
+        "currentItemRoughness": 1,
+        "currentItemOpacity": 100,
+        "currentItemFontFamily": 1,
+        "currentItemFontSize": 20,
+        "currentItemTextAlign": "center",
+        "currentItemStrokeSharpness": "sharp",
+        "currentItemStartArrowhead": null,
+        "currentItemEndArrowhead": "arrow",
+        "currentItemLinearStrokeSharpness": "round",
+        "gridSize": null,
+        "colorPalette": {}
     },
-    &quot;files&quot;: {}
+    "files": {}
 }
 </code></pre>
-<p>%%</p></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../../js/base.js" defer></script>
-        <script src="../../../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+<p>%%</p>
+</article>
 </div>
-
-    </body>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Find Executable.excalidraw" class="md-footer__link md-footer__link--prev" href="../Find%20Executable.excalidraw/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Find Executable.excalidraw
+            </div>
+</div>
+</a>
+<a aria-label="Next: Run Executable from Command Line.excalidraw" class="md-footer__link md-footer__link--next" href="../Run%20Executable%20from%20Command%20Line.excalidraw/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Run Executable from Command Line.excalidraw
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
 </html>

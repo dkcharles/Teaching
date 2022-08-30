@@ -1,278 +1,514 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>AI Timeline - My Docs</title>
-        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../../../..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">COM326 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../../COM326/COM326%20README/" class="dropdown-item">COM326 README</a>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>AI Timeline - EEE205 Artificial Intelligence I</title>
+<link href="../../../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#ai-timeline-summary">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            EEE205 Artificial Intelligence I
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              AI Timeline
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="green" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    EEE205 Artificial Intelligence I
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+        Home
+      </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../COM326/Classes/Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Hello World</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          COM326
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="COM326" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          COM326
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/COM326%20README/">
+        COM326 README
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../COM326/Classes/Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Using Visual Studio</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Hello World
+      </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../COM326/Classes/Lectures/Lecture%201%20-%20Hello%20Magee/" class="dropdown-item">Introduction to C++</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Using Visual Studio
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../COM326/Classes/Lectures/Lecture%202%20-/" class="dropdown-item">Lecture Title</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../COM326/Classes/Notes/C%2B%2B%20vs%20Other%20Languages/" class="dropdown-item">C++ vs Other Languages</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" id="__nav_2_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_2">
+          Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Lectures/Lecture%201%20-%20Hello%20Magee/">
+        Introduction to C++
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../COM326/Classes/Notes/Find%20Executable.excalidraw/" class="dropdown-item">Find Executable.excalidraw</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Lectures/Lecture%202%20-/">
+        Lecture Title
+      </a>
 </li>
-            
-<li>
-    <a href="../../../../COM326/Classes/Notes/Hello%20World%20in%20VStudio.excalidraw/" class="dropdown-item">Hello World in VStudio.excalidraw</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../../../../COM326/Classes/Notes/Run%20Executable%20from%20Command%20Line.excalidraw/" class="dropdown-item">Run Executable from Command Line.excalidraw</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_3" id="__nav_2_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_3">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Notes/C%2B%2B%20vs%20Other%20Languages/">
+        C++ vs Other Languages
+      </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../COM326/Prep/C%2B%2B%20One%20hour%20a%20day/" class="dropdown-item">C++ One hour a day</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Notes/Find%20Executable.excalidraw/">
+        Find Executable.excalidraw
+      </a>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EEE205 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../EEE205%20README/" class="dropdown-item">EEE205 README</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Notes/Hello%20World%20in%20VStudio.excalidraw/">
+        Hello World in VStudio.excalidraw
+      </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">a Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../a_Lectures/L1%20-%20Introduction%20to%20AI/" class="dropdown-item">L1   Introduction to AI</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Classes/Notes/Run%20Executable%20from%20Command%20Line.excalidraw/">
+        Run Executable from Command Line.excalidraw
+      </a>
 </li>
-            
-<li>
-    <a href="../../a_Lectures/L2%20-%20Applications%20of%20AI/" class="dropdown-item">L2   Applications of AI</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../../a_Lectures/L3%20-%20AI%20Research/" class="dropdown-item">AI Research</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">b Seminars</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../b_Seminars/S1%20Python%20Basics/" class="dropdown-item">Seminar 1 - Python Basics</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../COM326/Prep/C%2B%2B%20One%20hour%20a%20day/">
+        C++ One hour a day
+      </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">c Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../c_Labs/" class="dropdown-item">Index</a>
+</ul>
+</nav>
 </li>
-            
-<li>
-    <a href="../../c_Labs/P1%20Beginning%20Python/" class="dropdown-item">P1 Beginning Python</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">d Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../AI%20Glossary/" class="dropdown-item">AI Glossary</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          EEE205
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="EEE205" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          EEE205
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../EEE205%20README/">
+        EEE205 README
+      </a>
 </li>
-            
-<li>
-    <a href="./" class="dropdown-item active">AI Timeline</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_1" id="__nav_3_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_1">
+          a Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="a Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_1">
+<span class="md-nav__icon md-icon"></span>
+          a Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../a_Lectures/L1%20-%20Introduction%20to%20AI/">
+        L1   Introduction to AI
+      </a>
 </li>
-            
-<li>
-    <a href="../Further%20Information/" class="dropdown-item">Sources 19-08-2022</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../a_Lectures/L2%20-%20Applications%20of%20AI/">
+        L2   Applications of AI
+      </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../Prep/EEE205%20Planning%20-%202022-2023/" class="dropdown-item">EEE205 Planning   2022 2023</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../a_Lectures/L3%20-%20AI%20Research/">
+        AI Research
+      </a>
 </li>
-            
-<li>
-    <a href="../../../Prep/S1%20Notes/" class="dropdown-item">S1 Notes</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../AI%20Glossary/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../Further%20Information/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#ai-timeline-summary" class="nav-link">AI Timeline Summary</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#early-ai-timeline-1901-1950" class="nav-link">Early AI Timeline - 1901 - 1950</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#early-ai-timeline-1950s" class="nav-link">Early AI Timeline - 1950s</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#early-ai-timeline-1960s" class="nav-link">Early AI Timeline - 1960s</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#recent-ai-timeline-2010s" class="nav-link">Recent AI Timeline  - 2010s</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#ai-ml" class="nav-link">AI  #ml</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
-
-<h2 id="ai-timeline-summary">AI Timeline Summary</h2>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" id="__nav_3_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2">
+          b Seminars
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="b Seminars" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+          b Seminars
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../b_Seminars/S1%20Python%20Basics/">
+        Seminar 1 - Python Basics
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3">
+          c Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="c Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+          c Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../c_Labs/P1%20Beginning%20Python/">
+        P1 Beginning Python
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_4" id="__nav_3_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4">
+          d Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="d Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+          d Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AI%20Glossary/">
+        AI Glossary
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          AI Timeline
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        AI Timeline
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai-timeline-summary">
+    AI Timeline Summary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1901-1950">
+    Early AI Timeline - 1901 - 1950
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1950s">
+    Early AI Timeline - 1950s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1960s">
+    Early AI Timeline - 1960s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recent-ai-timeline-2010s">
+    Recent AI Timeline  - 2010s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai-ml">
+    AI  #ml
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Further%20Information/">
+        Sources 19-08-2022
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Prep/EEE205%20Planning%20-%202022-2023/">
+        EEE205 Planning   2022 2023
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Prep/S1%20Notes/">
+        S1 Notes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai-timeline-summary">
+    AI Timeline Summary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1901-1950">
+    Early AI Timeline - 1901 - 1950
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1950s">
+    Early AI Timeline - 1950s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#early-ai-timeline-1960s">
+    Early AI Timeline - 1960s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recent-ai-timeline-2010s">
+    Recent AI Timeline  - 2010s
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai-ml">
+    AI  #ml
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h2 id="ai-timeline-summary">AI Timeline Summary<a class="headerlink" href="#ai-timeline-summary" title="Permanent link">¶</a></h2>
 <p><em>Full timeline here</em> <a href="https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence">Timeline of artificial intelligence - Wikipedia</a></p>
-<h2 id="early-ai-timeline-1901-1950">Early AI Timeline - 1901 - 1950</h2>
+<h2 id="early-ai-timeline-1901-1950">Early AI Timeline - 1901 - 1950<a class="headerlink" href="#early-ai-timeline-1901-1950" title="Permanent link">¶</a></h2>
 <p>1913: <a href="https://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a> and <a href="https://en.wikipedia.org/wiki/Alfred_North_Whitehead">Alfred North Whitehead</a> published <a href="https://en.wikipedia.org/wiki/Principia_Mathematica">Principia Mathematica</a>, which revolutionized <a href="https://en.wikipedia.org/wiki/Formal_logic">formal logic</a>.</p>
 <p>1915: <a href="https://en.wikipedia.org/wiki/Leonardo_Torres_y_Quevedo">Leonardo Torres y Quevedo</a> built a chess automaton, <a href="https://en.wikipedia.org/wiki/El_Ajedrecista">El Ajedrecista</a> and published speculation about thinking and automata. (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence)</p>
 <p>1923: <a href="https://en.wikipedia.org/wiki/Karel_%C4%8Capek">Karel Čapek</a>'s play <a href="https://en.wikipedia.org/wiki/R.U.R._(Rossum%27s_Universal_Robots)">R.U.R. (Rossum's Universal Robots)</a> opened in London. This is the first use of the word "<a href="https://en.wikipedia.org/wiki/Robot">robot</a>" in English. (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence)</p>
@@ -284,7 +520,7 @@
 <p>1945: <a href="https://en.wikipedia.org/wiki/Game_theory">Game theory</a> which would prove invaluable in the progress of AI was introduced with the 1944 paper, <a href="https://en.wikipedia.org/wiki/Theory_of_Games_and_Economic_Behavior">Theory of Games and Economic Behavior</a> by <a href="https://en.wikipedia.org/wiki/Mathematician">mathematician</a> <a href="https://en.wikipedia.org/wiki/John_von_Neumann">John von Neumann</a> and <a href="https://en.wikipedia.org/wiki/Economist">economist</a> <a href="https://en.wikipedia.org/wiki/Oskar_Morgenstern">Oskar Morgenstern</a>.</p>
 <p>1945: <a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush</a> published <a href="https://en.wikipedia.org/wiki/As_We_May_Think">As We May Think</a> (<a href="https://en.wikipedia.org/wiki/The_Atlantic_Monthly">The Atlantic Monthly</a>, July 1945) a prescient vision of the future in which computers assist humans in many activities.</p>
 <p>1948: <a href="https://en.wikipedia.org/wiki/John_von_Neumann">John von Neumann</a> (quoted by <a href="https://en.wikipedia.org/wiki/E.T._Jaynes">E.T. Jaynes</a>) in response to a comment at a lecture that it was impossible for a machine to think: "You insist that there is something a machine cannot do. If you will tell me precisely what it is that a machine cannot do, then I can always make a machine which will do just that!". Von Neumann was presumably alluding to the <a href="https://en.wikipedia.org/wiki/Church-Turing_thesis">Church-Turing thesis</a> which states that any effective procedure can be simulated by a (generalized) computer.</p>
-<h2 id="early-ai-timeline-1950s">Early AI Timeline - 1950s</h2>
+<h2 id="early-ai-timeline-1950s">Early AI Timeline - 1950s<a class="headerlink" href="#early-ai-timeline-1950s" title="Permanent link">¶</a></h2>
 <p>1950: <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> proposes the <a href="https://en.wikipedia.org/wiki/Turing_Test">Turing Test</a> as a measure of machine intelligence. (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence)</p>
 <p>1950: <a href="https://en.wikipedia.org/wiki/Claude_Elwood_Shannon">Claude Shannon</a> published a detailed analysis of <a href="https://en.wikipedia.org/wiki/Chess">chess</a> playing as <a href="https://en.wikipedia.org/wiki/Search_algorithm">search</a>.</p>
 <p>1950: <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a> published his <a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics">Three Laws of Robotics</a>.</p>
@@ -298,7 +534,7 @@
 <p>1959: The <a href="https://en.wikipedia.org/wiki/General_Problem_Solver">General Problem Solver</a> (GPS) was created by Newell, Shaw and Simon while at CMU.</p>
 <p>1959: <a href="https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)">John McCarthy</a> and <a href="https://en.wikipedia.org/wiki/Marvin_Minsky">Marvin Minsky</a> founded the <a href="https://en.wikipedia.org/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory">MIT AI Lab</a>.</p>
 <p>Late 1950s, early 1960s: <a href="https://en.wikipedia.org/wiki/Margaret_Masterman">Margaret</a> <a href="https://en.wikipedia.org/wiki/Margaret_Masterman">Masterman</a> and colleagues at <a href="https://en.wikipedia.org/wiki/University_of_Cambridge">University of Cambridge</a> design <a href="https://en.wikipedia.org/wiki/Lexical_semantics">semantic nets</a> for <a href="https://en.wikipedia.org/wiki/Machine_translation">machine translation</a>.</p>
-<h2 id="early-ai-timeline-1960s">Early AI Timeline - 1960s</h2>
+<h2 id="early-ai-timeline-1960s">Early AI Timeline - 1960s<a class="headerlink" href="#early-ai-timeline-1960s" title="Permanent link">¶</a></h2>
 <p>1960s: <a href="https://en.wikipedia.org/wiki/Ray_Solomonoff">Ray</a> <a href="https://en.wikipedia.org/wiki/Ray_Solomonoff">Solomonoff</a> lays the foundations of a <a href="https://en.wikipedia.org/wiki/Mathematical">mathematical</a> theory of AI, introducing universal <a href="https://en.wikipedia.org/wiki/Bayesian_method">Bayesian methods</a> for inductive inference and prediction.</p>
 <p>1961: James Slagle (PhD dissertation, MIT) wrote (in Lisp) the first symbolic <a href="https://en.wikipedia.org/wiki/Integral">integration</a> program, SAINT, which solved <a href="https://en.wikipedia.org/wiki/Calculus">calculus</a> problems at the college freshman level.</p>
 <p>1961: In <a href="https://en.wikipedia.org/wiki/Minds,_Machines_and_G%C3%B6del">Minds, Machines and Gödel</a>, <a href="https://en.wikipedia.org/wiki/John_Lucas_(philosopher)">John Lucas</a> (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence) denied the possibility of machine intelligence on <a href="https://en.wikipedia.org/wiki/Logic">logical</a> or <a href="https://en.wikipedia.org/wiki/Philosophy">philosophical</a> grounds. He referred to <a href="https://en.wikipedia.org/wiki/Kurt_G%C3%B6del">Kurt Gödel</a>'s result of 1931: sufficiently powerful formal systems are either inconsistent or allow for formulating true theorems unprovable by any theorem-proving AI deriving all provable theorems from the axioms. Since humans are able to "see" the truth of such theorems, machines were deemed inferior.</p>
@@ -315,7 +551,7 @@
 <p>1969: First International Joint Conference on Artificial Intelligence (<a href="https://en.wikipedia.org/wiki/IJCAI">IJCAI</a>) held at Stanford.</p>
 <p>1969: Marvin Minsky and <a href="https://en.wikipedia.org/wiki/Seymour_Papert">Seymour</a> <a href="https://en.wikipedia.org/wiki/Seymour_Papert">Papert</a> publish <a href="https://en.wikipedia.org/wiki/Perceptrons_(book)">Perceptrons</a>, demonstrating previously unrecognized limits of this feed-forward two-layered structure, and This book is considered by some to mark the beginning of the <a href="https://en.wikipedia.org/wiki/AI_winter">AI winter</a> of the 1970s, a failure of confidence and funding for AI. Nevertheless, significant progress in the field continued (see below).</p>
 <p>1969: McCarthy and Hayes started the discussion about the <a href="https://en.wikipedia.org/wiki/Frame_problem">frame problem</a> with their essay, "Some Philosophical Problems from the Standpoint of Artificial Intelligence".</p>
-<h2 id="recent-ai-timeline-2010s">Recent AI Timeline  - 2010s</h2>
+<h2 id="recent-ai-timeline-2010s">Recent AI Timeline  - 2010s<a class="headerlink" href="#recent-ai-timeline-2010s" title="Permanent link">¶</a></h2>
 <p>2010: <a href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a> launched Kinect for Xbox 360, the first gaming device to <a href="http://research.microsoft.com/en-us/projects/vrkinect/">track human body movement</a>, using just a 3D camera and infra-red detection, enabling users to play their Xbox 360 wirelessly. The award-winning machine learning for human motion capture technology for this device was developed by the <a href="http://research.microsoft.com/en-us/groups/vision/default.aspx">Computer Vision group</a> at <a href="https://en.wikipedia.org/wiki/Microsoft_Research">Microsoft Research</a>, Cambridge. (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence) (https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence)</p>
 <p>2011: <a href="https://en.wikipedia.org/wiki/IBM">IBM</a>'s <a href="https://en.wikipedia.org/wiki/Watson_(artificial_intelligence_software)">Watson</a> computer defeated <a href="https://en.wikipedia.org/wiki/Television">television</a> <a href="https://en.wikipedia.org/wiki/Game_show">game show</a> <a href="https://en.wikipedia.org/wiki/Jeopardy!">Jeopardy!</a> champions <a href="https://en.wikipedia.org/wiki/Brad_Rutter">Rutter</a> and <a href="https://en.wikipedia.org/wiki/Ken_Jennings">Jennings</a>.</p>
 <p>2011–2014: <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a>'s <a href="https://en.wikipedia.org/wiki/Siri">Siri</a> (2011), <a href="https://en.wikipedia.org/wiki/Google">Google</a>'s <a href="https://en.wikipedia.org/wiki/Google_Now">Google Now</a> (2012) and <a href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a>'s <a href="https://en.wikipedia.org/wiki/Cortana">Cortana</a> (2014) are <a href="https://en.wikipedia.org/wiki/Smartphone">smartphone</a> <a href="https://en.wikipedia.org/wiki/Application_software">apps</a> that use <a href="https://en.wikipedia.org/wiki/Natural_language">natural language</a> to answer questions, make recommendations and perform actions.</p>
@@ -331,81 +567,62 @@
 <p>2019: DeepMind's AlphaStar reaches Grandmaster level at StarCraft II, outperforming 99.8 percent of human players.</p>
 <p>2020: Microsoft introduced its Turing Natural Language Generation (T-NLG), which was then the "largest language model ever published at 17 billion parameters".</p>
 <p>2020: OpenAI's GPT-3, a state-of-the-art autoregressive language model that uses deep learning to produce a variety of computer codes, poetry and other language tasks exceptionally similar, and almost indistinguishable from those written by humans. Its capacity was ten times greater than that of the T-NLG. It was introduced in May 2020, and was in beta testing in June 2020.</p>
-<h1 id="ai-ml">AI  #ml</h1></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../../js/base.js" defer></script>
-        <script src="../../../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+<h1 id="ai-ml">AI  #ml<a class="headerlink" href="#ai-ml" title="Permanent link">¶</a></h1>
+</article>
 </div>
-
-    </body>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: AI Glossary" class="md-footer__link md-footer__link--prev" href="../AI%20Glossary/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              AI Glossary
+            </div>
+</div>
+</a>
+<a aria-label="Next: Sources 19-08-2022" class="md-footer__link md-footer__link--next" href="../Further%20Information/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Sources 19-08-2022
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
 </html>

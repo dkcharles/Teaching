@@ -1,339 +1,643 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../../../img/favicon.ico">
-        <title>Introduction to C++ - My Docs</title>
-        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../../../..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">COM326 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../COM326%20README/" class="dropdown-item">COM326 README</a>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>Introduction to C++ - EEE205 Artificial Intelligence I</title>
+<link href="../../../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#introduction-to-c">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            EEE205 Artificial Intelligence I
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Introduction to C++
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="green" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="EEE205 Artificial Intelligence I" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="EEE205 Artificial Intelligence I">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    EEE205 Artificial Intelligence I
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+        Home
+      </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Hello World</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          COM326
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="COM326" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          COM326
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../COM326%20README/">
+        COM326 README
+      </a>
 </li>
-            
-<li>
-    <a href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="dropdown-item">Using Visual Studio</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" id="__nav_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Labs/Practical%201%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Hello World
+      </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active">Introduction to C++</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/">
+        Using Visual Studio
+      </a>
 </li>
-            
-<li>
-    <a href="../Lecture%202%20-/" class="dropdown-item">Lecture Title</a>
+</ul>
+</nav>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../Notes/C%2B%2B%20vs%20Other%20Languages/" class="dropdown-item">C++ vs Other Languages</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" id="__nav_2_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_2">
+          Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction to C++
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Introduction to C++
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dr-darryl-charles">
+    Dr Darryl Charles
+  </a>
 </li>
-            
-<li>
-    <a href="../../Notes/Find%20Executable.excalidraw/" class="dropdown-item">Find Executable.excalidraw</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preparation">
+    Preparation
+  </a>
 </li>
-            
-<li>
-    <a href="../../Notes/Hello%20World%20in%20VStudio.excalidraw/" class="dropdown-item">Hello World in VStudio.excalidraw</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
 </li>
-            
-<li>
-    <a href="../../Notes/Run%20Executable%20from%20Command%20Line.excalidraw/" class="dropdown-item">Run Executable from Command Line.excalidraw</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../Prep/C%2B%2B%20One%20hour%20a%20day/" class="dropdown-item">C++ One hour a day</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#com326-module-structure">
+    COM326 module structure
+  </a>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EEE205 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../../EEE205/EEE205%20README/" class="dropdown-item">EEE205 README</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#coursework">
+    Coursework
+  </a>
 </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Classes</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">a Lectures</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L1%20-%20Introduction%20to%20AI/" class="dropdown-item">L1   Introduction to AI</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#replit-vs-visual-studio">
+    Replit vs Visual Studio
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L2%20-%20Applications%20of%20AI/" class="dropdown-item">L2   Applications of AI</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-orientation">
+    Object Orientation
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/a_Lectures/L3%20-%20AI%20Research/" class="dropdown-item">AI Research</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hello-world-and-the-anatomy-of-a-c-program">
+    Hello World and the anatomy of a C++ program
+  </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">b Seminars</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/b_Seminars/S1%20Python%20Basics/" class="dropdown-item">Seminar 1 - Python Basics</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inputoutput-namespaces">
+    Input/Output, namespaces
+  </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">c Labs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/c_Labs/" class="dropdown-item">Index</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comments-in-code">
+    Comments in code
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/c_Labs/P1%20Beginning%20Python/" class="dropdown-item">P1 Beginning Python</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integrated-development-environments-for-c">
+    Integrated Development Environments for C++
+  </a>
 </li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">d Notes</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/AI%20Glossary/" class="dropdown-item">AI Glossary</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compilers-and-building-an-executable">
+    Compilers and building an executable
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/AI%20Timeline/" class="dropdown-item">AI Timeline</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-keywords-and-libraries">
+    C++ Keywords and Libraries
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Classes/d_Notes/Further%20Information/" class="dropdown-item">Sources 19-08-2022</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variables-and-constants">
+    Variables and constants
+  </a>
 </li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Prep</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../../../EEE205/Prep/EEE205%20Planning%20-%202022-2023/" class="dropdown-item">EEE205 Planning   2022 2023</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions">
+    Functions
+  </a>
 </li>
-            
-<li>
-    <a href="../../../../EEE205/Prep/S1%20Notes/" class="dropdown-item">S1 Notes</a>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+    Summary
+  </a>
 </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../Lecture%202%20-/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#introduction-to-c" class="nav-link">Introduction to C++</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#dr-darryl-charles" class="nav-link">Dr Darryl Charles</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#preparation" class="nav-link">Preparation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#com326-module-structure" class="nav-link">COM326 module structure</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#coursework" class="nav-link">Coursework</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#replit-vs-visual-studio" class="nav-link">Replit vs Visual Studio</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#object-orientation" class="nav-link">Object Orientation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#hello-world-and-the-anatomy-of-a-c-program" class="nav-link">Hello World and the anatomy of a C++ program</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#inputoutput-namespaces" class="nav-link">Input/Output, namespaces</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#comments-in-code" class="nav-link">Comments in code</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#integrated-development-environments-for-c" class="nav-link">Integrated Development Environments for C++</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#compilers-and-building-an-executable" class="nav-link">Compilers and building an executable</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#c-keywords-and-libraries" class="nav-link">C++ Keywords and Libraries</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#variables-and-constants" class="nav-link">Variables and constants</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#functions" class="nav-link">Functions</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#summary" class="nav-link">Summary</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#reflection-and-further-study" class="nav-link">Reflection and Further Study</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#cplusplus-replit-main-helloworld-console-input-debug-variable-function-compiler-oop-class" class="nav-link">Cplusplus, #replit, #main, #helloworld, #console, #input, #debug, #variable, #function, #compiler, #OOP, #class</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
-
-<h1 id="introduction-to-c">Introduction to C++</h1>
-<h2 id="dr-darryl-charles">Dr Darryl Charles</h2>
-<hr />
-<h2 id="preparation">Preparation</h2>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reflection-and-further-study">
+    Reflection and Further Study
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lecture%202%20-/">
+        Lecture Title
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_3" id="__nav_2_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_3">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/C%2B%2B%20vs%20Other%20Languages/">
+        C++ vs Other Languages
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Find%20Executable.excalidraw/">
+        Find Executable.excalidraw
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Hello%20World%20in%20VStudio.excalidraw/">
+        Hello World in VStudio.excalidraw
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Run%20Executable%20from%20Command%20Line.excalidraw/">
+        Run Executable from Command Line.excalidraw
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Prep/C%2B%2B%20One%20hour%20a%20day/">
+        C++ One hour a day
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          EEE205
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="EEE205" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          EEE205
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/EEE205%20README/">
+        EEE205 README
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Classes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_1" id="__nav_3_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_1">
+          a Lectures
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="a Lectures" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_1">
+<span class="md-nav__icon md-icon"></span>
+          a Lectures
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L1%20-%20Introduction%20to%20AI/">
+        L1   Introduction to AI
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L2%20-%20Applications%20of%20AI/">
+        L2   Applications of AI
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/a_Lectures/L3%20-%20AI%20Research/">
+        AI Research
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" id="__nav_3_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_2">
+          b Seminars
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="b Seminars" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+          b Seminars
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/b_Seminars/S1%20Python%20Basics/">
+        Seminar 1 - Python Basics
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" id="__nav_3_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_3">
+          c Labs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="c Labs" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+          c Labs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/c_Labs/P1%20Beginning%20Python/">
+        P1 Beginning Python
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_4" id="__nav_3_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2_4">
+          d Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="d Notes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+          d Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/AI%20Glossary/">
+        AI Glossary
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/AI%20Timeline/">
+        AI Timeline
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Classes/d_Notes/Further%20Information/">
+        Sources 19-08-2022
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Prep
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Prep" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Prep
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Prep/EEE205%20Planning%20-%202022-2023/">
+        EEE205 Planning   2022 2023
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../EEE205/Prep/S1%20Notes/">
+        S1 Notes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dr-darryl-charles">
+    Dr Darryl Charles
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preparation">
+    Preparation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+    Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#com326-module-structure">
+    COM326 module structure
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#coursework">
+    Coursework
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#replit-vs-visual-studio">
+    Replit vs Visual Studio
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#object-orientation">
+    Object Orientation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hello-world-and-the-anatomy-of-a-c-program">
+    Hello World and the anatomy of a C++ program
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inputoutput-namespaces">
+    Input/Output, namespaces
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comments-in-code">
+    Comments in code
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integrated-development-environments-for-c">
+    Integrated Development Environments for C++
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compilers-and-building-an-executable">
+    Compilers and building an executable
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-keywords-and-libraries">
+    C++ Keywords and Libraries
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variables-and-constants">
+    Variables and constants
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions">
+    Functions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+    Summary
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reflection-and-further-study">
+    Reflection and Further Study
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="introduction-to-c">Introduction to C++<a class="headerlink" href="#introduction-to-c" title="Permanent link">¶</a></h1>
+<h2 id="dr-darryl-charles">Dr Darryl Charles<a class="headerlink" href="#dr-darryl-charles" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">¶</a></h2>
 <ul>
 <li>Videos 5 - 8: C++: The Cherno - <a href="https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb">C++ - YouTube</a></li>
 <li>First 4 videos. C++: NeuralNine - <a href="https://www.youtube.com/playlist?list=PL7yh-TELLS1HSmBcqYk9LhPYSWp31FWH2">C++ Beginner Tutorials - YouTube</a></li>
 </ul>
 <p>Consider buying the book Book code "C++ in One Hour a Day, Sams Teach Yourself", Siddhartha Rao.</p>
 <p>Note that much of the code that we use is similar to that store on GitHub from the book <a href="https://github.com/learncppnow/9E">Code samples from Teach Yourself C++ In One Hour a Day, Ninth Edition by Siddhartha Rao</a>.</p>
-<hr />
-<h2 id="overview">Overview</h2>
+<hr/>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
 <ol>
 <li>Introduction</li>
 <li>COM326 module structure and assignments</li>
@@ -344,126 +648,107 @@
 <li>C++ basics and functions</li>
 <li>Conclusion</li>
 </ol>
-<hr />
-<h2 id="introduction">Introduction</h2>
+<hr/>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
 <ul>
 <li>In this module you will be learning to code C++</li>
 <li>Why C++? <em>fast, compatible, stable specification, engineering, game development</em> </li>
 <li>Why Object Orientation? <em>modularity,  inheritance, polymorphism, large projects</em></li>
 <li>Issues with C++ <em>misbehaving with types, integer overflow, pointers</em> </li>
 </ul>
-<hr />
-<h2 id="com326-module-structure">COM326 module structure</h2>
-<p>![[COM326 README]]</p>
-<hr />
-<h2 id="coursework">Coursework</h2>
+<hr/>
+<h2 id="com326-module-structure">COM326 module structure<a class="headerlink" href="#com326-module-structure" title="Permanent link">¶</a></h2>
+<p><img alt="COM326 README" src="../../../COM326%20README/"/></p>
+<hr/>
+<h2 id="coursework">Coursework<a class="headerlink" href="#coursework" title="Permanent link">¶</a></h2>
 <p>Coursework is worth 100% of the marks for this module.
 - There are Two assignments: an individual assessment (50%), and a group assessment (50%)</p>
 <pre><code>Assignment 1: In Replit
 
 Assignment 2: In Visual Studio (or similar)
 </code></pre>
-<hr />
-<p>![[C++ vs Other Languages]]</p>
-<hr />
-<h2 id="replit-vs-visual-studio">Replit vs Visual Studio</h2>
-<h2 id="object-orientation">Object Orientation</h2>
-<hr />
-<h2 id="hello-world-and-the-anatomy-of-a-c-program">Hello World and the anatomy of a C++ program</h2>
-<hr />
-<h2 id="inputoutput-namespaces">Input/Output, namespaces</h2>
-<hr />
-<h2 id="comments-in-code">Comments in code</h2>
-<hr />
-<h2 id="integrated-development-environments-for-c">Integrated Development Environments for C++</h2>
-<hr />
-<h2 id="compilers-and-building-an-executable">Compilers and building an executable</h2>
-<hr />
-<h2 id="c-keywords-and-libraries">C++ Keywords and Libraries</h2>
-<hr />
-<h2 id="variables-and-constants">Variables and constants</h2>
-<hr />
-<h2 id="functions">Functions</h2>
-<hr />
-<h2 id="summary">Summary</h2>
-<hr />
-<h2 id="reflection-and-further-study">Reflection and Further Study</h2>
-<hr />
-<h1 id="cplusplus-replit-main-helloworld-console-input-debug-variable-function-compiler-oop-class">Cplusplus, #replit, #main, #helloworld, #console, #input, #debug, #variable, #function, #compiler, #OOP, #class</h1></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../../js/base.js" defer></script>
-        <script src="../../../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+<hr/>
+<p><img alt="C++ vs Other Languages" src="../../Notes/C%2B%2B%20vs%20Other%20Languages/"/></p>
+<hr/>
+<h2 id="replit-vs-visual-studio">Replit vs Visual Studio<a class="headerlink" href="#replit-vs-visual-studio" title="Permanent link">¶</a></h2>
+<h2 id="object-orientation">Object Orientation<a class="headerlink" href="#object-orientation" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="hello-world-and-the-anatomy-of-a-c-program">Hello World and the anatomy of a C++ program<a class="headerlink" href="#hello-world-and-the-anatomy-of-a-c-program" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="inputoutput-namespaces">Input/Output, namespaces<a class="headerlink" href="#inputoutput-namespaces" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="comments-in-code">Comments in code<a class="headerlink" href="#comments-in-code" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="integrated-development-environments-for-c">Integrated Development Environments for C++<a class="headerlink" href="#integrated-development-environments-for-c" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="compilers-and-building-an-executable">Compilers and building an executable<a class="headerlink" href="#compilers-and-building-an-executable" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="c-keywords-and-libraries">C++ Keywords and Libraries<a class="headerlink" href="#c-keywords-and-libraries" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="variables-and-constants">Variables and constants<a class="headerlink" href="#variables-and-constants" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<hr/>
+<h2 id="reflection-and-further-study">Reflection and Further Study<a class="headerlink" href="#reflection-and-further-study" title="Permanent link">¶</a></h2>
+<hr/>
+<h1 id="cplusplus-replit-main-helloworld-console-input-debug-variable-function-compiler-oop-class">Cplusplus, #replit, #main, #helloworld, #console, #input, #debug, #variable, #function, #compiler, #OOP, #class<a class="headerlink" href="#cplusplus-replit-main-helloworld-console-input-debug-variable-function-compiler-oop-class" title="Permanent link">¶</a></h1>
+</article>
 </div>
-
-    </body>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Using Visual Studio" class="md-footer__link md-footer__link--prev" href="../../Labs/Practical%202%20-%20First%20C%2B%2B%20Programs%20%28Week%201%29/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Using Visual Studio
+            </div>
+</div>
+</a>
+<a aria-label="Next: Lecture Title" class="md-footer__link md-footer__link--next" href="../Lecture%202%20-/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Lecture Title
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
 </html>
